@@ -21,15 +21,17 @@ body{
 	padding: 20px; 
 }
 .actions > svg:nth-Child(1){
-	height: 80px;
-	width: 70px;
+	height: 60px;
+	width: 53px;
 }
 .actions > svg:nth-Child(2){
-	height: 80px;
-	width: 80px;
+	height: 60px;
+	width: 60px;
 }
 .actions > svg.active{
 	fill: red;
+	transform: scale(1.2);
+	transition: all 0.3s;
 }
 
 /*.actions > #brush{

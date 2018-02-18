@@ -9,17 +9,17 @@ autoSetCanvasSize(yyy)
 //监听鼠标
 listenterurser(yyy)
 
-//橡皮檫
-var eraserEnabled = false
+
+var buttonState = false
 pen.onclick = function(){
-	eraserEnabled = false
-	pen.classlist.add('active')
-	eraser.classlist.remove('active')
+	buttonState = false
+	pen.classList.add('active')
+	eraser.classList.remove('active')
 }
 eraser.onclick = function(){
-	eraserEnabled = true
-	eraser.classlist.add('active')
-	pen.classlist.remove('active')
+	buttonState = true
+	eraser.classList.add('active')
+	pen.classList.remove('active')
 }
 // eraser.onclick = function(){
 //   eraserEnabled = true //橡皮檫使用
@@ -86,7 +86,7 @@ function listenterurser(canvas){
     	var y = aaa.touches[0].clientY
     	// console.log(x,y)
     	using = true
-    	if(eraserEnabled){
+    	if(buttonState){
       		context.clearRect(x-5,y-5,20,20)
     	}else{
         	lastPoint = {
@@ -102,7 +102,7 @@ function listenterurser(canvas){
     	var x = aaa.touches[0].clientX
        	var y = aaa.touches[0].clientY
        	if(!using){return}
-       	if(eraserEnabled){
+       	if(buttonState){
         	context.clearRect(x-5,y-5,20,20)
        	}else{
            var newPoint = {
@@ -124,7 +124,7 @@ function listenterurser(canvas){
     	var x = aaa.clientX
     	var y = aaa.clientY
     	using = true
-    	if(eraserEnabled){
+    	if(buttonState){
       		context.clearRect(x-5,y-5,20,20)
     	}else{
         	lastPoint = {
@@ -139,7 +139,7 @@ function listenterurser(canvas){
        var x = aaa.clientX
        var y = aaa.clientY
        if(!using){return}
-       if(eraserEnabled){
+       if(buttonState){
          context.clearRect(x-5,y-5,20,20)
        }else{
            var newPoint = {
