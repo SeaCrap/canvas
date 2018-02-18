@@ -4,6 +4,12 @@
 
 body{
   	margin:0;
+  	overflow: hidden;
+}
+ul,ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .icon {
@@ -28,11 +34,67 @@ body{
 	height: 60px;
 	width: 60px;
 }
+.actions > svg:nth-Child(3){
+	height: 55px;
+	width: 55px;
+}
+.actions > svg:nth-Child(4){
+	height: 50px;
+	width: 50px;
+}
 .actions > svg.active{
 	fill: red;
 	transform: scale(1.2);
 	transition: all 0.3s;
 }
+.colors{
+	position: fixed;
+	top: 80px;
+	left: 16px;
+
+	border-radius: 5px;
+	
+}
+.colors li{
+	width: 25px;	
+	height: 25px;
+	border-radius: 20px;
+	box-shadow: 0 0 1px 2px #ddd;
+	margin: 10px 0;
+}
+.colors li.red{
+	background-color: red;
+}
+.colors li.green{
+	background-color: green;
+}
+.colors li.blue{
+	background-color: blue;
+}
+.colors li.active{
+	box-shadow: 0 0 1px 2px #888;
+}
+
+.line{
+	position: fixed;
+	top: 23px;
+	right: 30px;
+	
+}
+.line li{
+	margin: 20px 0;
+}
+.line .thin{
+	height: 0;
+	width: 60px;
+	border-top: 8px solid #666;
+}
+.line .thick{
+	height: 0;
+	width: 60px;
+	border-top: 10px solid #666;
+}
+
 
 /*.actions > #brush{
   	display: none;
