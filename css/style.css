@@ -1,0 +1,43 @@
+#xxx{
+  	background: #fff;
+}
+
+body{
+  	margin:0;
+}
+
+.icon {
+
+	width: 2em; height: 2em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+
+.actions{
+	position:fixed;
+	top: 0;
+	left: 0;
+	padding: 20px; 
+}
+.actions > svg:nth-Child(1){
+	height: 80px;
+	width: 70px;
+}
+.actions > svg:nth-Child(2){
+	height: 80px;
+	width: 80px;
+}
+.actions > svg.active{
+	fill: red;
+}
+
+/*.actions > #brush{
+  	display: none;
+}
+.actions.x > #brush{
+  	display: inline-block;
+}
+.actions.x > #eraser{
+  	display: none;
+}*/
