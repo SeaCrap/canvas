@@ -24,7 +24,10 @@ ul,ol{
 	position:fixed;
 	top: 0;
 	left: 0;
-	padding: 20px; 
+	
+}
+.actions > svg{
+	margin: 40px 35px;
 }
 .actions > svg:nth-Child(1){
 	height: 60px;
@@ -49,18 +52,17 @@ ul,ol{
 }
 .colors{
 	position: fixed;
-	top: 80px;
-	left: 16px;
-
+	top: 90px;
+	left: 20px;
 	border-radius: 5px;
 	
 }
 .colors li{
-	width: 25px;	
-	height: 25px;
+	width: 30px;	
+	height: 30px;
 	border-radius: 20px;
 	box-shadow: 0 0 1px 2px #ddd;
-	margin: 10px 0;
+	margin: 40px 0;
 }
 .colors li.red{
 	background-color: red;
@@ -77,12 +79,12 @@ ul,ol{
 
 .line{
 	position: fixed;
-	top: 23px;
+	top: 10px;
 	right: 30px;
 	
 }
 .line li{
-	margin: 20px 0;
+	margin: 40px 0;
 }
 .line .thin{
 	height: 0;
