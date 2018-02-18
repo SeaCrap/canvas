@@ -143,6 +143,7 @@ function listenterurser(canvas){
     	// console.log('变摸边懂')
     	var x = aaa.touches[0].clientX
        	var y = aaa.touches[0].clientY
+       	aaa.preventDefault();
        	if(!using){return}
        	if(buttonState){
         	context.clearRect(x-5,y-5,20,20)
